@@ -19,8 +19,8 @@ const Home = () => {
     window.location.href = `https://accounts.spotify.com/authorize?client_id=${
       process.env.ClientID
     }&response_type=code&redirect_uri=${encodeURIComponent(
-      process.env.BASE_URL
-    )}/auth&scope=user-read-private user-read-email user-read-playback-state user-read-currently-playing`;
+      process.env.BASE_URL + '/auth'
+    )}&scope=user-read-private user-read-email user-read-playback-state user-read-currently-playing`;
   };
 
   return (

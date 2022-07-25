@@ -1,10 +1,10 @@
-/* This is a database connection function*/
+/* This is a database connection function */
 import mongoose from "mongoose";
 
-const connection = {}; /* creating connection object*/
+const connection = {}; /* creating connection object */
 
 async function dbConnect() {
-  /* check if we have connection to our databse*/
+  /* check if we have connection to our database */
   if (connection.isConnected) {
     return;
   }
